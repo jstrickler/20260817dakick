@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class Card {
+            _rank
+            _suit
+            rank
+            suit
+          }
+          style Card fill:#77AADD
+          class CardDeck {
+            CLUB : str
+            DEALER_NAMES : list
+            DIAMOND : str
+            HEART : str
+            RANKS
+            SPADE : str
+            SUITS : tuple
+            _cards : list
+            _dealer_name
+            cards
+            dealer_name
+            _make_deck()
+            draw() Card
+            draw_n(n) CardList
+            get_ranks()
+            shuffle()
+          }
+          style CardDeck fill:#99DDFF
+          class JokerDeck {
+            _make_deck()
+          }
+          style JokerDeck fill:#44BB99
+          JokerDeck --|> CardDeck
+  
+       </div>
+  </body>
+</html>

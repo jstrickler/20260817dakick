@@ -29,6 +29,7 @@
 29:Harding:Warren Gamaliel:1865-11-02:1923-08-02:Blooming Grove:Ohio:1921-03-04:1923-08-02:Republican
 30:Coolidge:Calvin:1872-07-04:1933-01-05:Plymouth:Vermont:1923-08-03:1929-03-04:Republican
 31:Hoover:Herbert Clark:1874-08-10:1964-10-20:West Branch:Iowa:1929-03-04:1933-03-04:Republican
+
 32:Roosevelt:Franklin Delano:1882-01-30:1945-04-12:Hyde Park:New York:1933-03-04:1945-04-12:Democratic
 33:Truman:Harry S.:1884-05-08:1972-12-26:Lamar:Missouri:1945-04-12:1953-01-20:Democratic
 34:Eisenhower:Dwight David:1890-10-14:1969-03-28:Denison:Texas:1953-01-20:1961-01-20:Republican
@@ -36,6 +37,7 @@
 36:Johnson:Lyndon Baines:1908-08-27:1973-01-22:near Stonewall:Texas:1963-11-22:1969-01-20:Democratic
 37:Nixon:Richard Milhous:1913-01-09:1994-04-22:Yorba Linda:California:1969-01-20:1974-08-09:Republican
 38:Ford:Gerald Rudolph:1913-07-14:2006-12-26:Omaha:Nebraska:1974-08-09:1977-01-20:Republican
+
 39:Carter:James Earl 'Jimmy':1924-10-01:2024-12-29:Plains:Georgia:1977-01-20:1981-01-20:Democratic
 40:Reagan:Ronald Wilson:1911-02-06:2004-06-05:Tampico:Illinois:1981-01-20:1989-01-20:Republican
 41:Bush:George Herbert Walker:1924-06-12:2018-11-30:Milton:Massachusetts:1989-01-20:1993-01-20:Republican

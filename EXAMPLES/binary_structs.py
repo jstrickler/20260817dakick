@@ -7,6 +7,8 @@ demo = Struct('iif10s')  # create Struct object with desired data layout
 print(f"Size of data: {demo.size} bytes") # size property gives size of data in bytes
 
 binary_stream = demo.pack(*values) # pack() converts values into binary stream using format
+print(f"{binary_stream = }")
+
 
 int1, int2, float1, raw_bytes = demo.unpack(binary_stream) # unpack() converts binary stream into list of values
 str1 = raw_bytes.decode().rstrip('\x00')  # decode the raw bytes into a string, and strip off trailing null bytes (that were added by pack())
