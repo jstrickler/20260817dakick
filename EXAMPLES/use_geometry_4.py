@@ -1,5 +1,7 @@
 from geometry import *
 
+print(f"{PI = }")
+
 circle = circle_area(8)
 print(f"{circle = }")
 

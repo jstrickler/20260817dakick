@@ -12,8 +12,6 @@ API_KEY = "DEMO_KEY"
 
 # API_KEY = "your-API-key-goes-here"
 
-
-
 async def fetch_apod_async(date):
     async with aiohttp.ClientSession() as session:
         async with session.get(

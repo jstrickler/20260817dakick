@@ -1,11 +1,12 @@
 with open("../DATA/presidents.txt") as pres_in:
-    count_of = {}
+    count_of = {}  # empty dict
 
     for rec in pres_in:
         flds = rec.split(":")
         state = flds[6]
-        if state in count_of:
-            count_of[state] += 1
+        if state in count_of: # if key in dict
+            count_of[state] = count_of[state] + 1
+            # count_of[state] += 1  # add 1 to value
         else:
             count_of[state] = 1
 
