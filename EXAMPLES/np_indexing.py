@@ -27,5 +27,5 @@ print()
 print('a[:3, :3] =>\n', a[:3,:3])  # first 3 rows, first 3 columns
 print()
 
-print('a[::2] =>\n', a[::2])  # every second row
+print('a[ ] =>\n', a[::2])  # every second row
 print()

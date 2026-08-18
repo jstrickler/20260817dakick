@@ -7,7 +7,7 @@ print()
 print(a1)
 print()
 
-a1.shape = 3, 5  # reshape to 3x5
+a1 = a1.reshape(3, 5)  # reshape to 3x5
 print(a1)
 print()
 
@@ -33,3 +33,7 @@ a2.shape = 2, 5, 4  # reshape to 2x5x4
 
 print(a2)
 print()
+
+
+# a[2][1]
+# a[2, 1]
