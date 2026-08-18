@@ -1,6 +1,10 @@
 import pickle
 from pprint import pprint
 
+class Dog:
+    def bark(self):
+        print("woof")
+
 # some data structures
 airports = {
     'RDU': 'Raleigh-Durham', 'IAD': 'Dulles', 'MGW': 'Morgantown',
@@ -20,6 +24,7 @@ data = [  # list of data structures
     colors,
     airports,
     values,
+    Dog(),
 ]
 
 print("BEFORE:")
@@ -36,3 +41,4 @@ with open('../TEMP/pickled_data.pkl', 'rb') as pkl_in:  # open pickle file for r
 
 print("AFTER:")
 pprint(pickled_data)  # view data structures
+pickled_data[-1].bark()

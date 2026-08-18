@@ -1,6 +1,6 @@
 import csv
 
-csv.register_dialect('colon-sep', delimiter=":")
+csv.register_dialect('colon-sep', delimiter=":")  # param=x, param=x, ....
 
 with open('../DATA/knights.txt') as knights_in:
     reader = csv.reader(knights_in, dialect="colon-sep")

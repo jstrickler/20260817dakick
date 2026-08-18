@@ -10,7 +10,7 @@ num_people = 0
 
 today = datetime.now()
 
-for row in ws['A2:D9']:
+for row in ws[f'A2:D{ws.max_row}']:
     birthday = row[3].value
     age = (today - birthday).days // 365
     #  print(age)

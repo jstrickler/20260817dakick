@@ -16,7 +16,7 @@ ws.title = 'fruits'
 ws.append(['Fruit', 'Length'])
 
 for fruit in fruits:
-    ws.append([fruit, len(fruit)])
+    ws.append([fruit, len(fruit), fruit[0].upper(), fruit.upper()])
 
 # hard way
 # for i, fruit in enumerate(fruits, 1):

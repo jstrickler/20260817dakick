@@ -43,7 +43,7 @@ def update_last_names(ws):
     for row in ws['B2:B47']:
         cell = row[0]
         cell.value = cell.value.upper()
-        cell.font = Font(color='FF0000FF', name="Comic Sans", size=22)
+        cell.font = Font(color='FF0000FF', name="Arial", size=14)
 
 if __name__ == '__main__':
     main()
