@@ -21,3 +21,6 @@ print()
 print('m1 @ m2 =>\n', m1 @ m2)  # matrix multiply m1 times m2 -- diagonal product
 print()
 
+print(np.transpose(m1))
+print()
+print(m1.T)

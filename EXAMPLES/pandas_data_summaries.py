@@ -16,6 +16,10 @@ print(df.describe(include='int'))
 print_header("df.describe(include='all')")
 print(df.describe(include='all'))
 
+print_header("df.describe(include='str')")
+print(df.describe(include='str'))
+
+
 print_header("df.info()")
 print(df.info())
 

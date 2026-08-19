@@ -2,10 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_excel(
-    'https://qrc.depaul.edu/Excel_Files/Presidents.xlsx',
-    index_col="No",  # use term as row index
-    sheet_name='Master',  # name of worksheet
-    na_values='NA()')  # use NA() for missing values
+    '../DATA/presidents.xlsx',
+    # index_col="Term",
+    # 'https://qrc.depaul.edu/Excel_Files/Presidents.xlsx',
+    # index_col="No",  # use term as row index
+    # sheet_name='Master',  # name of worksheet
+    # na_values='NA()')  # use NA() for missing values
+)
 
 print("First 5 rows")
 print(df.head(), '\n')
@@ -13,7 +16,7 @@ print(df.head(), '\n')
 print("First row")
 print(df.loc[1], '\n')
 
-party_counts = df['Political Party'].value_counts()
+party_counts = df['Party affiliation'].value_counts()
 print("Party counts")
 print(party_counts)
 

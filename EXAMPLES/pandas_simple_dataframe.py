@@ -25,5 +25,6 @@ print(values, '\n')
 df = pd.DataFrame(values, index=rows, columns=columns)  # create dataframe with row and column names
 print_header('DataFrame df')
 print(df, '\n')
-
+print(df.columns)
+print(df.index)
 

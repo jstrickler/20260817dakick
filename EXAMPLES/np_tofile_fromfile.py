@@ -16,6 +16,6 @@ file_name = 'sample.dat'
 sample_data.tofile(file_name)  # Write data to file (binary, but not portable)
 
 data = np.fromfile(file_name)  # Read binary data from file as one-dimensional array
-data.shape = sample_data.shape  # Set shape to shape of original array
+new_data = data.reset(sample_data.shape)  # Set shape to shape of original array
 
 print(data)

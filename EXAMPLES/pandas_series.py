@@ -13,7 +13,10 @@ s2 = pd.Series(data)  # create series with auto-generated index (0, 1, 2, 3, ...
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+
+
 print("selecting elements")
+print(s1['d'], "\n")
 print(s1[['h', 'b']], "\n")  # select items from series
 
 print(s1[['a', 'b', 'c']], "\n")  # select items from series
@@ -35,7 +38,12 @@ s3 = s1 * 10  # create new series with every element of s1 multiplied by 10
 print("s3 (which is s1 * 10)")
 print(s3, "\n")
 
-s1['e'] *= 5
+print(f"{s1['e'] * 5 = }")
+
+s4 = s1 * 5
+print(f"{s4 = }")
+# s1 *= 5
+
 
 print("boolean mask where s3 > 0:")
 print(s3 > 0, "\n")  # create boolean mask from series
