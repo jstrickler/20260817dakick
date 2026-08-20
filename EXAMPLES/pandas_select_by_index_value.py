@@ -14,7 +14,7 @@ df1 = df.loc[:'PHX', (col for col in df.columns if 'Rank' in col)]
 print(df1, '\n')
 
 # select rows where row index starts with 'A'
-df2 = df.loc[(row for row in df.index if row.startswith('A'))]
+df2 = df.loc[(row for row in df.index if row.startswith('O'))]
 print(df2, '\n')
 
 # alternate approach

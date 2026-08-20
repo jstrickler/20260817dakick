@@ -20,4 +20,7 @@ print(df["EmployeeType"].str[0:3], '\n')
 # get employee type as upper case
 print(df["EmployeeType"].str.upper(), '\n')
 
+print(df["EmployeeType"].str.startswith('h'), '\n')
+
+
 

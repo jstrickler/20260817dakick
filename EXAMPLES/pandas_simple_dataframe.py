@@ -27,4 +27,15 @@ print_header('DataFrame df')
 print(df, '\n')
 print(df.columns)
 print(df.index)
+print(f"{type(df.index) = }")
+
+new_index = pd.Index([10, 20, 30, 40, 50, 60], name="wombat")
+df.set_index(new_index, inplace=True)
+print(df)
+
+new_columns = pd.Index(['AB', 'CD', 'EF', 'GH', 'IJ'], name="badger")
+df.columns = new_columns
+print(df)
+df.index.name = "Ebenezer"
+print(df)
 
