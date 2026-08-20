@@ -11,7 +11,9 @@ col_names = ["1960","1965","1970","1975","1980","1985","1990","1991",
 
 df = pd.read_csv(
     '../DATA/energy_use_quad.csv',
-    names = col_names,    
+    names=col_names,
+    index_col=0,
+    usecols=[0, 1, 2, 3, 4, 5, 6, 7],
 )
 
 
@@ -25,3 +27,7 @@ print(d2)
 plt.plot(d2['Residential and commercial'])
 plt.show()
 
+for header in 'Transportation', 'Industrial', 'Residential and commercial':
+    plt.plot(df2[header], label=header)
+plt.legend()
+plt.show()
