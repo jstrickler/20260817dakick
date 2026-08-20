@@ -9,6 +9,9 @@ import consume_omdb_cf_procs
 import consume_omdb_async
 import consume_omdb_serial
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 MODULES = (
     consume_omdb_threads,
     consume_omdb_procs,
