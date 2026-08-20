@@ -4,7 +4,7 @@ import ctypes
 # load the library, according to platform
 try:
     if sys.platform == 'win32':
-        pres_lib = r'..\DATA\presidents.dll'
+        pres_lib = r'DATA\presidents.dll'
     elif sys.platform == 'darwin':
         pres_lib = '../DATA/presidents.dylib'
     else:

@@ -24,11 +24,16 @@ def main():
 
 
 def analyze_file(file_path):
-    with open(file_path, "rb") as file_in:
-        contents = file_in.read()
-        num_bytes = len(contents)
-        num_lines = contents.count(b'\n')
-        return num_bytes, num_lines
-
+    return_value = 0, 0
+    try:
+        with open(file_path, "rb") as file_in:
+            contents = file_in.read()
+            num_bytes = len(contents)
+            num_lines = contents.count(b'\n')
+            return_value =  num_bytes, num_lines
+    except Exception:
+        return_value = 0, 0
+        
+    return return_value
 if __name__ == '__main__':
     main()
